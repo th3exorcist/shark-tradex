@@ -1,26 +1,20 @@
 import React from 'react';
-import logo from './logo.svg';
-import './App.css';
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+import { SharkProvider } from './shark/SharkContext';
+import sharksList from './shark/sharksList';
+import sharkTrade from './shark/sharkTrade';
+import sharkForm from './shark/sharkForm';
+
+const App = () => (
+  <SharkProvider>
+    <div className="main">
+      <sharksList />
+      <sharkTrade />
     </div>
-  );
-}
+    <div className='form-wrapper'>
+      <sharkForm />
+    </div>
+  </SharkProvider>
+);
 
 export default App;

@@ -11,3 +11,24 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+
+.main {
+  display: flex;
+}
+
+.sharks-list {
+  border-right: 1px solid;
+}
+
+.sharks-list,
+.sharktrade {
+  padding: 0 50px 20px;
+  border-bottom: 1px solid;
+  flex-grow: 1;
+}
+
+.form-wrapper {
+  margin-top: 20px;
+  text-align: center;
+}
